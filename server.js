@@ -3,6 +3,8 @@ const express = require('express');
 const mustache = require('hbs');
 const fs = require('fs');
 
+const port = process.env.PORT || 3000;
+
 app = express();
 
 mustache.registerPartials(__dirname + "/views/partials");
@@ -55,6 +57,6 @@ app.get('/about', (req, res) => {
 //     res.send(mustache.render("{{title}} spends {{calc}}", view));
 // });
 
-app.listen(3000, () => {
-    console.log('Server started');
+app.listen(port, () => {
+    console.log('Server started on PORT:' + port);
 });
