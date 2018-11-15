@@ -43,7 +43,7 @@ app.get('/', (req, res) => {
 });
 
 var view = {
-    pageTitle: "About Page",
+    pageTitle: "About My Page",
     title: "Joe",
     calc: function () {
       return 2 + 4;
