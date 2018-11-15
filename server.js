@@ -46,7 +46,7 @@ var view = {
     pageTitle: "About My Page",
     title: "Joe",
     calc: function () {
-      return 2 + 4;
+      return port;
     }
   };
 
